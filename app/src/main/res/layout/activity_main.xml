@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WebView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/webview"
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    android:layout_x="167dp"
+    android:layout_y="149dp">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="640dp" >
+
+    </WebView>
+
+    <LinearLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:textSize="8dp"
+            android:text="Home">
+        </Button>
+
+    </LinearLayout>
+</FrameLayout>
