@@ -1,7 +1,10 @@
 package com.sho.documentationsite;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.content.ContextCompat;
 
+import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
@@ -10,14 +13,15 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     private WebView webview;
-    private Button homeButton;
-    private Button aboutButton;
-    private Button teamButton;
-    private Button docsButton;
+    private ImageButton homeButton;
+    private ImageButton aboutButton;
+    private ImageButton teamButton;
+    private ImageButton docsButton;
 
 
     // Removes header and footer from the page
@@ -36,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Setting up buttons
-        homeButton = (Button) findViewById(R.id.btnHome);
-        aboutButton = (Button) findViewById(R.id.btnAbout);
-        teamButton = (Button) findViewById(R.id.btnTeam);
-        docsButton = (Button) findViewById(R.id.btnDocs);
+        homeButton = (ImageButton) findViewById(R.id.btnHome);
+        aboutButton = (ImageButton) findViewById(R.id.btnAbout);
+        teamButton = (ImageButton) findViewById(R.id.btnTeam);
+        docsButton = (ImageButton) findViewById(R.id.btnDocs);
 
         //Setting up Webview to allow javascript
         webview = (WebView) findViewById(R.id.webview);

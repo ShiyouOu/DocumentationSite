@@ -9,65 +9,76 @@
     <WebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
-        android:layout_height="670dp">
+        android:layout_height="600dp">
 
     </WebView>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@android:color/darker_gray"/>
+        android:background="@android:color/background_dark"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:padding="0dp"
         android:layout_margin="0dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btnHome"
-            android:layout_width="100dp"
+            android:layout_width="103dp"
             android:layout_height="match_parent"
-            android:text="Home"
-            android:textSize="15dp"
-            android:paddingLeft="5dp"
             android:background="@android:color/white"
             android:textColor="@color/black"
             android:gravity="center_horizontal"
-            android:textAlignment="center">
-        </androidx.appcompat.widget.AppCompatButton>
-        <androidx.appcompat.widget.AppCompatButton
+            android:textAlignment="center"
+            android:src="@drawable/home"
+            android:scaleType="fitCenter"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:tint="@color/cardview_dark_background">
+        </androidx.appcompat.widget.AppCompatImageButton>
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btnAbout"
-            android:layout_width="100dp"
+            android:layout_width="103dp"
             android:layout_height="match_parent"
-            android:text="About"
-            android:textSize="15dp"
             android:background="@android:color/white"
             android:textColor="@color/black"
             android:gravity="center_horizontal"
-            android:textAlignment="center">
-        </androidx.appcompat.widget.AppCompatButton>
-        <androidx.appcompat.widget.AppCompatButton
+            android:textAlignment="center"
+            android:src="@drawable/about"
+            android:scaleType="fitCenter"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:tint="@color/cardview_dark_background">
+        </androidx.appcompat.widget.AppCompatImageButton>
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btnTeam"
-            android:layout_width="100dp"
+            android:layout_width="103dp"
             android:layout_height="match_parent"
-            android:text="Team"
-            android:textSize="15dp"
             android:background="@android:color/white"
             android:textColor="@color/black"
             android:gravity="center_horizontal"
-            android:textAlignment="center">
-        </androidx.appcompat.widget.AppCompatButton>
-        <androidx.appcompat.widget.AppCompatButton
+            android:textAlignment="center"
+            android:src="@drawable/team"
+            android:scaleType="fitCenter"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:tint="@color/cardview_dark_background">
+        </androidx.appcompat.widget.AppCompatImageButton>
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btnDocs"
-            android:layout_width="100dp"
+            android:layout_width="103dp"
             android:layout_height="match_parent"
-            android:text="Docs"
-            android:textSize="15dp"
-            android:paddingRight="5dp"
             android:background="@android:color/white"
             android:textColor="@color/black"
             android:gravity="center_horizontal"
-            android:textAlignment="center">
-        </androidx.appcompat.widget.AppCompatButton>
+            android:textAlignment="center"
+            android:src="@drawable/docs"
+            android:scaleType="fitCenter"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:tint="@color/cardview_dark_background">
+        </androidx.appcompat.widget.AppCompatImageButton>
     </LinearLayout>
 </LinearLayout>
