@@ -9,9 +9,10 @@
     <WebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
-        android:layout_height="600dp">
-
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8">
     </WebView>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
